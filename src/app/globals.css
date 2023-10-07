@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+  margin: 0 auto;
+}
 /* Navbar */
+.navbar-area {
+  position: absolute;
+  background: transparent;
+  z-index: 2;
+  left: 0;
+  right: 0;
+}
 .navbar-start {
   width: 100%;
   justify-content: space-between;
@@ -10,3 +20,61 @@
 .dropdown .dropdown-content {
   right: 0;
 }
+/* My button */
+.banner-btn {
+  margin-top: 25px;
+}
+.my-button {
+  display: inline-block;
+  font-weight: 500;
+}
+.my-button a {
+  padding: 10px 35px;
+  display: block;
+  background: linear-gradient(to right, #9fcb22, #359d08);
+  /* background: linear-gradient(to right, #ff2200, #ff7600); */
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.my-button a:hover {
+  /* background: linear-gradient(to right, #ff2200, #ff7600); */
+  background: linear-gradient(to right, #9fcb22, #359d08);
+  color: #fff;
+  display: inline-block;
+  transition: all 300ms ease;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.banner-btn > :first-child {
+  margin-right: 20px;
+}
+
+/* Banner */
+.banner-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-width: 600px;
+}
+.banner-content h5 {
+  font-size: 25px;
+  color: #4eb92d;
+  font-weight: 600;
+}
+.banner-content h2 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1.1em;
+  padding: 20px 0;
+}
+.banner-content p {
+  font-size: 24px;
+}
+/* styles.module.css */

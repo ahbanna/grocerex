@@ -1,54 +1,3 @@
-// import React from "react";
-
-// const Navbar = () => {
-//   return (
-//     <div>
-//       <nav className="flex flex-row items-center justify-between h-16 px-4 bg-white shadow-sm">
-//         <a href="/" className="text-xl font-bold">
-//           My Next.js Project
-//         </a>
-//         <ul className="hidden lg:flex flex-row items-center justify-end space-x-4">
-//           <li>
-//             <a href="/" className="text-gray-700 hover:text-gray-900">
-//               Home
-//             </a>
-//           </li>
-//           <li>
-//             <a href="/contact" className="text-gray-700 hover:text-gray-900">
-//               Contact
-//             </a>
-//           </li>
-//           <li>
-//             <a href="/items" className="text-gray-700 hover:text-gray-900">
-//               Items
-//             </a>
-//           </li>
-//         </ul>
-
-//         {/* Hamburger menu for mobile screens */}
-//         <button className="lg:hidden block" type="button" onClick={() => {}}>
-//           <svg
-//             xmlns="http://www.w3.org/2000/svg"
-//             fill="none"
-//             viewBox="0 0 24 24"
-//             stroke="currentColor"
-//             strokeWidth="2"
-//             className="w-6 h-6"
-//           >
-//             <path
-//               strokeLinecap="round"
-//               strokeLinejoin="round"
-//               d="M4 6h16M4 12h16M4 18h16"
-//             />
-//           </svg>
-//         </button>
-//       </nav>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
-
 import React from "react";
 import Link from "next/link";
 // import Logo from "./Logo";
@@ -58,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="navbar-area">
       <div className="container mx-auto">
-        <div className="navbar bg-base-100">
+        <div className="navbar">
           <div className="navbar-start">
             <a className="btn btn-ghost normal-case text-xl">GrocerEx</a>
             <div className="dropdown">
