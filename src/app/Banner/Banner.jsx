@@ -74,7 +74,8 @@
 import React, { Component, useEffect } from "react";
 import Slider from "react-slick";
 import banner1 from "../../../assets/banner/banner1.jpg";
-import banner2 from "../../../assets/banner/banner2.jpg";
+// import banner1 from "../../../../assets/banner/banner1.jpg";
+// import banner2 from "../../../assets/banner/banner2.jpg";
 // import banner2 from "../../../public/banner/banner1.jpg";
 import Image from "next/image";
 import MyButton from "@/components/MyButton";
@@ -85,9 +86,9 @@ const Banner = () => {
     dots: true,
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1,
+    // slidesToScroll: 2,
     // autoplay: true,
-    autoplaySpeed: 4000,
+    // autoplaySpeed: 4000,
     pauseOnHover: false,
   };
   return (

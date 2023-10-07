@@ -6,7 +6,6 @@ const HomePage = () => {
     // <main className="flex min-h-screen flex-col items-center justify-between">
     <main>
       <Banner></Banner>
-      <h2>This is home page</h2>
     </main>
   );
 };

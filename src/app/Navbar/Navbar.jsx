@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import logo from "../../../assets/logo.png";
+import Image from "next/image";
 // import Logo from "./Logo";
 // import Button from "./Button";
 
@@ -9,9 +11,14 @@ const Navbar = () => {
       <div className="container mx-auto">
         <div className="navbar">
           <div className="navbar-start">
-            <a className="btn btn-ghost normal-case text-xl">GrocerEx</a>
+            {/* <a className="btn normal-case text-xl">GrocerEx</a> */}
+            <a href="/">
+              <Image src={logo} alt="logo" width={150} height={60} />
+            </a>
+            {/* <a className="btn btn-ghost normal-case text-xl">GrocerEx</a> */}
             <div className="dropdown">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
+              <label tabIndex={0} className="btn lg:hidden">
+                {/* <label tabIndex={0} className="btn btn-ghost lg:hidden"> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -46,7 +53,16 @@ const Navbar = () => {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="https://www.youtube.com/">Contact</Link>
+                <Link href="/safdf">About</Link>
+              </li>
+              <li>
+                <Link href="https://www.youtube.com/">Blog</Link>
+              </li>
+              <li>
+                <Link href="https://www.youtube.com/">Shop</Link>
+              </li>
+              <li>
+                <Link href="/">Contact</Link>
               </li>
             </ul>
           </div>

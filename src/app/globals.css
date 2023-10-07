@@ -20,6 +20,27 @@
 .dropdown .dropdown-content {
   right: 0;
 }
+.navbar-area ul li a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: #4eb92d;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.navbar-area ul li:hover a::before {
+  width: 100%;
+}
+.navbar-area ul li a {
+  font-weight: 600;
+}
+.navbar-area ul li:hover a {
+  background: none;
+  color: #4eb92d;
+}
+
 /* My button */
 .banner-btn {
   margin-top: 25px;
@@ -62,6 +83,7 @@
   justify-content: center;
   height: 100vh;
   max-width: 600px;
+  padding-left: 10px;
 }
 .banner-content h5 {
   font-size: 25px;
@@ -76,5 +98,10 @@
 }
 .banner-content p {
   font-size: 24px;
+}
+
+/* Page not found */
+.not-found-area {
+  min-height: 800px;
 }
 /* styles.module.css */
