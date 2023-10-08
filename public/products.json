@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "category": "Electronics",
+    "name": "Smartphone",
+    "review": 4.5,
+    "price": 499.99,
+    "description": "A high-performance smartphone with advanced features.",
+    "quantity": 100,
+    "addToCartButton": "Add to Cart"
+  },
+  {
+    "id": 2,
+    "category": "Clothing",
+    "name": "Men's T-Shirt",
+    "review": 4.2,
+    "price": 29.99,
+    "description": "Comfortable cotton t-shirt for men.",
+    "quantity": 50,
+    "addToCartButton": "Add to Cart"
+  },
+  {
+    "id": 3,
+    "category": "Home",
+    "name": "Coffee Maker",
+    "review": 4.8,
+    "price": 89.99,
+    "description": "Automatic coffee maker for brewing delicious coffee.",
+    "quantity": 30,
+    "addToCartButton": "Add to Cart"
+  },
+  {
+    "id": 4,
+    "category": "Beauty",
+    "name": "Perfume",
+    "review": 4.7,
+    "price": 54.99,
+    "description": "Exquisite perfume with a captivating fragrance.",
+    "quantity": 20,
+    "addToCartButton": "Add to Cart"
+  }
+]

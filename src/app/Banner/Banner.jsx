@@ -73,10 +73,7 @@
 "use client";
 import React, { Component, useEffect } from "react";
 import Slider from "react-slick";
-import banner1 from "../../../assets/banner/banner1.jpg";
-// import banner1 from "../../../../assets/banner/banner1.jpg";
-// import banner2 from "../../../assets/banner/banner2.jpg";
-// import banner2 from "../../../public/banner/banner1.jpg";
+import banner1 from "@/assets/banner/banner1.jpg";
 import Image from "next/image";
 import MyButton from "@/components/MyButton";
 import NextLink from "next/link";
@@ -122,7 +119,7 @@ const Banner = () => {
           <div
             className="banner-image"
             style={{
-              backgroundImage: `url(${banner2.src})`,
+              backgroundImage: `url(${banner1.src})`,
               width: "100%",
             }}
           >
