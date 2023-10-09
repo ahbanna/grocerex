@@ -163,7 +163,7 @@
   display: flex;
   align-items: center;
 }
-.cart-btn:hover button {
+.cart-btn button:hover {
   background: #4eb92d;
   color: #fff;
   transition: 0.3s;
@@ -174,4 +174,38 @@
 }
 .cart-btn button svg {
   margin-right: 5px;
+}
+
+/* Modal */
+.modal-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-top: 20px;
+}
+.modal-box {
+  max-width: 1000px;
+}
+.modal-image img {
+  border: 1px solid #ebe5da;
+  border-radius: 10px;
+  padding: 30px;
+}
+.modal-content {
+  margin-left: 30px;
+}
+.modal-content h2 {
+  font-size: 30px;
+  line-height: 35px;
+}
+.modal-content .rating-star {
+  justify-content: left;
+  margin-top: 15px;
+}
+.modal-content .price {
+  text-align: left;
+  font-size: 40px;
+}
+.category span {
+  color: #4eb92d;
 }
