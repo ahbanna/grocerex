@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: "Titillium Web", sans-serif !important; */
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -40,7 +52,15 @@
   background: none;
   color: #4eb92d;
 }
-
+.dropdown .btn {
+  background: #4eb92d;
+}
+.dropdown svg {
+  color: #fff;
+}
+.navbar-area .dropdown ul li:hover a::before {
+  width: 0;
+}
 /* My button */
 .banner-btn {
   margin-top: 25px;
@@ -171,6 +191,7 @@
   font-size: 18px;
   margin-top: 5px;
 }
+
 .cart-btn button {
   border: 2px solid #4eb92d;
   background: transparent;
@@ -188,6 +209,20 @@
   letter-spacing: 1px;
   border-radius: 0px;
   padding: 6px 45px;
+}
+.view-details {
+  margin: 0 auto;
+}
+.view-details button {
+  color: #666;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #4eb92d;
+  transition: 0.3s;
+}
+.view-details button:hover {
+  letter-spacing: 1px;
+  transition: 0.3s;
 }
 .cart-btn button svg {
   margin-right: 5px;
@@ -255,4 +290,160 @@
   padding: 10px 30px;
   background: #4eb92d;
   color: #000;
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Banner */
+  .banner-content h2 {
+    font-size: 60px;
+  }
+  .banner-content p {
+    font-size: 22px;
+  }
+  /* Section title */
+  .section-title {
+    width: 70%;
+  }
+  .section-title p {
+    font-size: 16px;
+  }
+  /* Products area */
+  .all-products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cart-btn button {
+    padding: 6px 25px;
+  }
+  .cart-btn button:hover {
+    padding: 6px 20px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Banner */
+  .banner-content {
+    text-align: center;
+    max-width: 100%;
+  }
+  .banner-content h2 {
+    font-size: 50px;
+    padding: 10px 0;
+  }
+  .banner-content p {
+    font-size: 20px;
+  }
+  /* Section title */
+  .section-title {
+    width: 90%;
+  }
+  .section-title h2 {
+    font-size: 40px;
+  }
+  .section-title p {
+    font-size: 16px;
+  }
+  /* Products area */
+  .all-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Banner */
+  .banner-content {
+    text-align: center;
+    max-width: 100%;
+  }
+  .banner-content h5 {
+    font-size: 22px;
+  }
+  .banner-content h2 {
+    font-size: 45px;
+    padding: 10px 0;
+  }
+  .banner-content p {
+    font-size: 18px;
+  }
+  /* Section title */
+  .section-title {
+    width: 100%;
+  }
+  .section-title h2 {
+    font-size: 36px;
+  }
+  .section-title p {
+    font-size: 16px;
+  }
+  /* Products area */
+  .all-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cart-btn button {
+    padding: 6px 25px;
+  }
+  .cart-btn button:hover {
+    padding: 6px 20px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  /* Banner */
+  .banner-content {
+    text-align: center;
+    max-width: 100%;
+  }
+  .banner-content h5 {
+    font-size: 20px;
+  }
+  .banner-content h2 {
+    font-size: 38px;
+    padding: 10px 0;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+  .banner-btn > :first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .banner-btn {
+    margin-top: 20px;
+    display: grid;
+    justify-items: center;
+  }
+  .my-button {
+    width: 40%;
+  }
+  .my-button a {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .my-button a:hover {
+    display: block;
+  }
+  /* Section title */
+  .section-title {
+    width: 100%;
+  }
+  .section-title h2 {
+    font-size: 32px;
+  }
+  .section-title p {
+    font-size: 15px;
+  }
+  /* Products area */
+  .search-bar input {
+    height: 40px;
+    width: 200px;
+  }
+  .search-btn {
+    height: 40px;
+    padding: 10px;
+  }
+  .search-btn:hover {
+    padding: 10px 15px;
+  }
+  .all-products {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

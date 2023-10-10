@@ -205,7 +205,7 @@ const Products = () => {
       <SectionTitle
         title="Top Selling Products"
         subtitle="
-        Explore the Ultimate Guide to Shopping Success. Unveiling the Top Selling Products of the Year! Your Exclusive Insight into the Trendiest Items, Best Deals, and Must-Have Innovations, All in One Place
+        Explore the Ultimate Guide to Shopping Success. Unveiling the Top Selling Products of the Year! Your Exclusive Insight into the Trendiest Items, Best Deals, All in One Place
         
         "
       />
@@ -256,14 +256,13 @@ const Products = () => {
                         <FaCartPlus /> Add to cart
                       </button>
                     </div>
-                    <div>
+                    <div className="view-details">
                       <button
-                        className="btn"
                         onClick={() =>
                           document.getElementById(`modal_${id}`).showModal()
                         }
                       >
-                        open modal
+                        View Details
                       </button>
                       <dialog id={`modal_${id}`} className="modal">
                         <div className="modal-box">
