@@ -153,6 +153,7 @@ import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { FaCartPlus, FaShoppingCart, FaSearch } from "react-icons/fa";
 import Swal from "sweetalert2";
+import SectionTitle from "@/components/SectionTitle";
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -200,7 +201,14 @@ const Products = () => {
     });
   };
   return (
-    <div className="all-products">
+    <div className="products-area container">
+      <SectionTitle
+        title="Top Selling Products"
+        subtitle="
+        Explore the Ultimate Guide to Shopping Success. Unveiling the Top Selling Products of the Year! Your Exclusive Insight into the Trendiest Items, Best Deals, and Must-Have Innovations, All in One Place
+        
+        "
+      />
       <div className="search-bar">
         <input
           type="text"
@@ -217,7 +225,7 @@ const Products = () => {
           <FaSearch />
         </button>
       </div>
-      <div className="container">
+      <div className="all-products">
         {searchResults.length === 0 ? (
           <div className="no-results">No products found</div>
         ) : (
